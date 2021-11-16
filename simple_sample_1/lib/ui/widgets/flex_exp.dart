@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 import 'labeled_container.dart';
 
@@ -10,6 +11,12 @@ class FlexExpand extends StatelessWidget {
     // El safeArea es un widget que inserta a su hijo con suficiente relleno para evitar intrusiones del sistema operativo
     return SafeArea(
       child: Scaffold(
+        appBar: AppBar(
+          title: Text(
+            "Layouts",
+            style: GoogleFonts.poppins(),
+          ),
+        ),
         body: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
